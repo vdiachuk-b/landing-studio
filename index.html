@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Studio</title>
+  <meta name="description" content="Landing Studio — сучасний лендінг." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Landing<span>Studio</span></a>
+      <nav class="nav" id="nav">
+        <a href="#features">Переваги</a>
+        <a href="#about">Про нас</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary nav-cta">Зв'язатися</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Створюємо сайти, які продають</h1>
+        <p class="hero-subtitle">
+          Проста та ефективна платформа для швидкого запуску вашого проєкту.
+          Почніть вже сьогодні.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Почати безкоштовно</a>
+          <a href="#features" class="btn btn-secondary">Дізнатися більше</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Наші переваги</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Швидкість</h3>
+            <p>Ваш сайт завантажується миттєво, забезпечуючи найкращий досвід користувача.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Дизайн</h3>
+            <p>Сучасний та адаптивний дизайн, який чудово виглядає на будь-якому пристрої.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Надійність</h3>
+            <p>Ваші дані та дані ваших клієнтів завжди в безпеці.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <h2 class="section-title">Про нас</h2>
+        <p>
+          Ми допомагаємо бізнесам створювати ефективні онлайн-присутності.
+          Наша команда поєднує креативність та технічну експертизу, щоб
+          втілити ваші ідеї в життя.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container cta-inner">
+        <h2>Готові розпочати?</h2>
+        <p>Залиште заявку і ми зв'яжемось з вами найближчим часом.</p>
+        <form class="contact-form" id="contactForm">
+          <input type="email" name="email" placeholder="Ваш email" required />
+          <button type="submit" class="btn btn-primary">Надіслати</button>
+        </form>
+        <p class="form-note" id="formNote" hidden>Дякуємо! Ми зв'яжемось з вами найближчим часом.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Landing Studio. Усі права захищено.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
