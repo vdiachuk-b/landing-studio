@@ -1,6 +1,8 @@
-# Landing Studio
+# PLACE — вокальна школа
 
 Простий статичний лендінг на HTML/CSS/JS без збірки — готовий для GitHub Pages.
+
+Сайт: https://vdiachuk-b.github.io/landing-studio/
 
 ## Структура
 
