@@ -271,6 +271,11 @@ a {
   gap: 40px;
 }
 
+.teachers-grid-2 {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
 .teacher-card {
   text-align: center;
 }
