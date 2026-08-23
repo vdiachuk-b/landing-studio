@@ -15,11 +15,11 @@ document.querySelectorAll('.nav a').forEach((link) => {
   });
 });
 
-const contactForm = document.getElementById('contactForm');
-const formNote = document.getElementById('formNote');
-
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  contactForm.reset();
-  formNote.hidden = false;
+document.querySelectorAll('[data-lead-form]').forEach((form) => {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    form.reset();
+    const note = form.parentElement.querySelector('[data-form-note]');
+    if (note) note.hidden = false;
+  });
 });

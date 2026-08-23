@@ -27,23 +27,86 @@
     </div>
   </header>
 
+  <div class="promo-banner">
+    <div class="container promo-inner">
+      <div class="promo-text">
+        <p class="promo-title">СТАРТУЄМО НОВИЙ ВОКАЛЬНИЙ СЕЗОН <span>ЦЬОГО ВЕРЕСНЯ!</span></p>
+        <p class="promo-subtitle">Запишись на ознайомче заняття до кінця серпня — і почни навчання в групі нового набору з 1 вересня.</p>
+      </div>
+      <span class="promo-badge">До 31.08</span>
+    </div>
+  </div>
+
+  <div class="floating-ctas">
+    <a href="#contact" class="floating-cta">
+      <span class="floating-cta-icon">☎</span>
+      <span class="floating-cta-label">Замовити дзвінок</span>
+    </a>
+    <a href="#demo" class="floating-cta floating-cta-solid">
+      <span class="floating-cta-icon">🎤</span>
+      <span class="floating-cta-label">Записатись на заняття</span>
+    </a>
+  </div>
+
   <main>
     <section class="hero">
-      <div class="container hero-inner">
-        <p class="hero-eyebrow">Вокальна школа в Луцьку</p>
-        <h1>Знайди свій голос</h1>
-        <p class="hero-subtitle">
-          Індивідуальні заняття вокалом для дітей і дорослих — з нуля або
-          для розвитку вже поставленого голосу. Перше заняття — ознайомче,
-          без зобов'язань.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Записатись на пробне заняття</a>
-          <a href="#pricing" class="btn btn-secondary">Абонементи</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Вокальна школа в Луцьку</p>
+          <h1>Знайди свій <span class="accent">голос</span></h1>
+          <p class="hero-subtitle">
+            Індивідуальні заняття вокалом для дітей і дорослих — з нуля або
+            для розвитку вже поставленого голосу. Перше заняття — ознайомче,
+            без зобов'язань.
+          </p>
+          <div class="hero-actions">
+            <a href="#demo" class="btn btn-primary">Записатись на пробне заняття</a>
+            <a href="#pricing" class="btn btn-secondary">Абонементи</a>
+          </div>
+          <p class="hero-trust">
+            Дорослим і дітям <span>·</span> Індивідуально та в групах <span>·</span> РЦ «Промінь», Луцьк
+          </p>
         </div>
-        <p class="hero-trust">
-          Дорослим і дітям <span>·</span> Індивідуально та в групах <span>·</span> РЦ «Промінь», Луцьк
-        </p>
+
+        <div class="hero-visual">
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="96" fill="url(#heroGradient)" />
+              <defs>
+                <linearGradient id="heroGradient" x1="10" y1="10" x2="190" y2="190" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#8b7ae6" />
+                  <stop offset="1" stop-color="#ff8a5c" />
+                </linearGradient>
+              </defs>
+              <g stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none">
+                <rect x="84" y="55" width="32" height="55" rx="16" fill="#ffffff" stroke="none" />
+                <path d="M64 100c0 22 16 38 36 38s36-16 36-38" />
+                <line x1="100" y1="138" x2="100" y2="155" />
+                <line x1="82" y1="155" x2="118" y2="155" />
+              </g>
+            </svg>
+          </div>
+          <div class="stat-bubble bubble-1"><strong>8</strong><span>років досвіду</span></div>
+          <div class="stat-bubble bubble-2"><strong>400+</strong><span>учнів PLACE</span></div>
+          <div class="stat-bubble bubble-3"><strong>6</strong><span>педагогів у команді</span></div>
+          <div class="stat-bubble bubble-4"><strong>1:1</strong><span>та групові формати</span></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="demo-card" id="demo">
+          <h2>Запишіться на ознайомче заняття</h2>
+          <p>Спробуйте формат і отримайте персональні рекомендації від педагога — без зобов'язань.</p>
+          <form class="lead-form" data-lead-form>
+            <input type="text" name="name" placeholder="Ім'я" required />
+            <div class="phone-field">
+              <span class="phone-prefix">🇺🇦 +380</span>
+              <input type="tel" name="phone" placeholder="Номер телефону" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Записатись</button>
+          </form>
+          <p class="form-note" data-form-note hidden>Дякуємо! Ми зв'яжемось з вами найближчим часом.</p>
+        </div>
       </div>
     </section>
 
@@ -154,12 +217,12 @@
         <p class="section-eyebrow">Контакти</p>
         <h2>Готові спробувати?</h2>
         <p>Залиште контакти — ми зв'яжемось і підберемо зручний час для першого заняття.</p>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" data-lead-form>
           <input type="text" name="name" placeholder="Ваше ім'я" required />
           <input type="tel" name="phone" placeholder="Номер телефону" required />
           <button type="submit" class="btn btn-primary">Записатись</button>
         </form>
-        <p class="form-note" id="formNote" hidden>Дякуємо! Ми зв'яжемось з вами найближчим часом.</p>
+        <p class="form-note" data-form-note hidden>Дякуємо! Ми зв'яжемось з вами найближчим часом.</p>
         <address class="cta-address">
           м. Луцьк, вул. Грушевського, 2<br />
           РЦ «Промінь»
