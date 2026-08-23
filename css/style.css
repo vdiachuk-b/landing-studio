@@ -1,9 +1,9 @@
 :root {
   --color-bg: #ffffff;
-  --color-bg-alt: #fafafa;
-  --color-text: #161616;
-  --color-text-muted: #6b6b6b;
-  --color-border: #dcdcdc;
+  --color-bg-alt: #f0efec;
+  --color-text: #101010;
+  --color-text-muted: #4c4c4f;
+  --color-border: #c7c5c0;
   --max-width: 1080px;
   --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -519,10 +519,10 @@ a {
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #121212;
-    --color-bg-alt: #1a1a1a;
-    --color-text: #f2f2f2;
-    --color-text-muted: #9a9a9a;
-    --color-border: #2e2e2e;
+    --color-bg-alt: #1e1e1e;
+    --color-text: #f7f7f7;
+    --color-text-muted: #aeaeae;
+    --color-border: #3c3c3c;
   }
 
   .site-header {
