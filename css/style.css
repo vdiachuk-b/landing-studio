@@ -426,23 +426,24 @@ a {
 .directions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1px;
-  background: var(--color-border);
-  border: 1px solid var(--color-border);
+  gap: 20px;
 }
 
 .direction-card {
-  background: var(--color-bg);
-  padding: 40px 32px;
+  border-radius: 20px;
+  padding: 32px 28px;
+  box-shadow: 0 10px 24px rgba(20, 16, 40, 0.06);
 }
 
-.direction-index {
+.direction-lavender { background: var(--bubble-lavender); }
+.direction-mint { background: var(--bubble-mint); }
+.direction-peach { background: var(--bubble-peach); }
+.direction-gold { background: var(--bubble-gold); }
+
+.direction-icon {
   display: block;
-  font-family: var(--font-serif);
-  font-style: italic;
-  color: var(--color-text-muted);
-  font-size: 1rem;
-  margin-bottom: 24px;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
 }
 
 .direction-card h3 {
@@ -452,7 +453,7 @@ a {
 
 .direction-card p {
   margin: 0;
-  color: var(--color-text-muted);
+  color: #3a3a3d;
   font-size: 0.95rem;
 }
 
@@ -470,20 +471,23 @@ a {
 
 .price-card {
   border: 1px solid var(--color-border);
+  border-radius: 20px;
   padding: 36px 28px;
   position: relative;
 }
 
 .price-card-featured {
-  border-color: var(--color-text);
+  border-color: var(--accent-violet);
+  border-width: 2px;
+  box-shadow: 0 14px 30px rgba(109, 91, 208, 0.18);
 }
 
 .price-badge {
   position: absolute;
   top: -13px;
   left: 28px;
-  background: var(--color-text);
-  color: var(--color-bg);
+  background: var(--accent-violet);
+  color: #fff;
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -506,10 +510,35 @@ a {
 }
 
 .price-desc {
-  margin: 0;
+  margin: 0 0 20px;
   color: var(--color-text-muted);
   font-size: 0.9rem;
   line-height: 1.55;
+}
+
+.price-features {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price-features li {
+  font-size: 0.88rem;
+  color: var(--color-text);
+  padding-left: 24px;
+  position: relative;
+}
+
+.price-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-violet);
+  font-weight: 700;
 }
 
 /* About */
@@ -534,7 +563,7 @@ a {
 .stats {
   display: flex;
   justify-content: center;
-  gap: 64px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -542,19 +571,70 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+  min-width: 160px;
+  padding: 28px 20px;
+  border-radius: 20px;
 }
+
+.stat-lavender { background: var(--bubble-lavender); }
+.stat-mint { background: var(--bubble-mint); }
+.stat-peach { background: var(--bubble-peach); }
 
 .stat-number {
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .stat-label {
-  color: var(--color-text-muted);
+  color: #3a3a3d;
   font-size: 0.85rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-top: 8px;
+}
+
+/* Steps */
+.steps {
+  padding: 100px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.step-card {
+  position: relative;
+  padding: 32px 24px 28px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-violet);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.step-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.step-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 /* Teachers */
@@ -581,8 +661,7 @@ a {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
+  background: linear-gradient(135deg, var(--bubble-lavender), var(--bubble-peach));
   margin: 0 auto 20px;
 }
 
