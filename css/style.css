@@ -155,50 +155,6 @@ a {
   letter-spacing: -0.01em;
 }
 
-/* Promo banner */
-.promo-banner {
-  background: linear-gradient(120deg, #cdbdfb 0%, #f6c9dd 100%);
-  padding: 22px 0;
-}
-
-.promo-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.promo-title {
-  margin: 0 0 6px;
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-  color: #241a4a;
-}
-
-.promo-title span {
-  color: var(--accent-orange);
-}
-
-.promo-subtitle {
-  margin: 0;
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: #3a2c66;
-  max-width: 56ch;
-}
-
-.promo-badge {
-  flex-shrink: 0;
-  background: #ffffff;
-  color: #241a4a;
-  font-weight: 700;
-  font-size: 0.9rem;
-  padding: 10px 20px;
-  border-radius: 999px;
-}
-
 /* Floating CTAs */
 .floating-ctas {
   position: fixed;
@@ -284,17 +240,6 @@ a {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-}
-
-.hero-trust {
-  margin: 28px 0 0;
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-}
-
-.hero-trust span {
-  margin: 0 6px;
-  opacity: 0.6;
 }
 
 /* Hero visual + floating stat bubbles */
@@ -819,11 +764,6 @@ a {
     gap: 40px;
   }
 
-  .promo-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .hero-grid {
     grid-template-columns: 1fr;
   }
@@ -919,13 +859,5 @@ a {
   .lead-form input {
     background: transparent;
     color: var(--color-text);
-  }
-
-  .promo-title {
-    color: #1a1330;
-  }
-
-  .promo-subtitle {
-    color: #2c2350;
   }
 }
